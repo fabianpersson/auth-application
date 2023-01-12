@@ -40,5 +40,3 @@ namespace auth.Infrastructure
         }
     }
 }
-
-¨
