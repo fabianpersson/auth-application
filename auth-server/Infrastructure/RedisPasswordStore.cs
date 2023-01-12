@@ -9,6 +9,7 @@ namespace auth.Infrastructure
     {
 
         ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost");
+
 		public RedisStore()
 		{
 		}
