@@ -8,13 +8,13 @@ using System.Runtime.Intrinsics.Arm;
 
 namespace auth.Domain
 {
-	public class TokenValidationService
-	{
+    public class TokenValidationService
+    {
         private static readonly SecurityKey _securityKey =
             new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Don't hardcode this"));
         public TokenValidationService()
-		{
-		}
+        {
+        }
 
         public static bool ValidateToken(string token, out string? user)
         {
@@ -32,7 +32,8 @@ namespace auth.Domain
 
                 return true;
 
-            } catch(Exception)
+            }
+            catch (Exception)
             {
                 user = string.Empty;
                 return false;

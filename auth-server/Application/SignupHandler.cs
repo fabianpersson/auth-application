@@ -8,8 +8,8 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace auth.Application
 {
-	public class SignupHandler
-	{
+    public class SignupHandler
+    {
         private readonly RedisStore _redisStore;
 
 
@@ -28,6 +28,6 @@ namespace auth.Application
                 new CancellationToken()
             );
         }
-	}
+    }
 }
 

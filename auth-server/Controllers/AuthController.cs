@@ -34,7 +34,8 @@ public class AuthController : ControllerBase
     {
         var token = await _loginHandler.AuthenticateUser(userCredentials);
 
-        if (!string.IsNullOrEmpty(token)) {
+        if (!string.IsNullOrEmpty(token))
+        {
             return Ok(token);
         }
         else
