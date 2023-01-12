@@ -1,4 +1,4 @@
-### Overview
+### Introduction
 
 - frontend built in react
 - backend built in .NET6
@@ -22,4 +22,4 @@
 
 1. Add tests
 2. Break out secrets to vault
-3. Package with docker or skaffold or similar
+3. Build in release modes and/or containerize
