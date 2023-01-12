@@ -5,14 +5,14 @@ using StackExchange.Redis;
 
 namespace auth.Infrastructure
 {
-	public class RedisStore
+    public class RedisStore
     {
 
         ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("localhost");
 
-		public RedisStore()
-		{
-		}
+        public RedisStore()
+        {
+        }
 
         public async Task<MimoUser> CreateAsync(MimoUser user, CancellationToken cancellationToken)
         {
@@ -22,7 +22,7 @@ namespace auth.Infrastructure
 
         public async Task<string?> GetPasswordHashAsync(string username, CancellationToken cancellationToken)
         {
-            return await redis.GetDatabase(2).StringGetAsync(username); 
+            return await redis.GetDatabase(2).StringGetAsync(username);
         }
 
     }
